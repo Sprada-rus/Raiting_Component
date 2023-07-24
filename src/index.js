@@ -11,11 +11,15 @@ const endTransitionCallback = (event) => {
   const { target } = event;
   target.removeEventListener('transitionend', endTransitionCallback);
   target.style.setProperty('display', 'none');
-  thanksCard.style.removeProperty('display');
+
+  setTimeout(() => {
+    thanksCard.style.removeProperty('display');
+  }, 300)
+  
   setTimeout(() => {
     thanksCard.classList.remove('close');
     thanksCard.classList.add('open');
-  }, 300);
+  }, 500);
 }
 
 const submitHandler = (event) => {
