@@ -53,7 +53,7 @@ main {
 }
 
 .card {
-  max-width: 375px;
+  max-width: 400px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -70,6 +70,10 @@ main {
 
 .card.open {
   transform: translateY(0);
+}
+
+.card__content .title {
+  font-size: 2rem;
 }
 
 .card__content .description{
@@ -182,3 +186,4 @@ main {
 #thanks-card .card__content {
   text-align: center;
 }
+
